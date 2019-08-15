@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+body{
+	background-color: #C7C7C7;
+	text-align: center;
+}
+/*------HEADER------*/
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	color: green;
+}
+#header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	display: flex;
+	background-color: #75838A;
+}
+#header-img{
+	display: flex;
+	flex: 1;
+}
+#nav-bar{
+	display: flex;
+	flex: 1;
+	width: 100%;
+}
+ul{
+	display: flex;
+	list-style-type: none;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 30px;
+}
+li{
+	border-right: 1px solid #FFF;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+li:last-child{
+	border-right: none;
+}
+/*------BODY------*/
+h2{
+	text-align: center;
+	margin-top: 10px;
+}
+#vid{
+	margin-top: 150px;
+}
+#Prices{
+	margin-top: 50px;
+	
+}
+.babyprice{
+	border: 1px solid black;
+	flex-basis: 32%;
+	padding: 0px,10px,10px,10px;
+	box-sizing: border-box;
+	background-color: white;
+}
+h3 {
+    background-color: #75838A;
+    color: black;
+    margin: 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.check{
+	background-color: orange;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 5px;
+	border: none;
+	padding: 5px;
+	cursor: pointer;
+}
+.information {
+	margin-top: 20px;
+	background-color: #fff;
+}
+
+#email {
+	max-width: 300px;
+	width: 100%;
+	margin-top: 20px;
+}
+#submit {
+	margin-top: 20px;
+	background-color: orange;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 5px;
+	border: none;
+	padding: 5px;
+	max-width: 200px;
+	width: 100%;
+	cursor: pointer;
+}
+/*------MEDIA QUERIES------*/
+@media (min-width: 900px) {
+	#Prices {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+@media (max-width: 767px) {
+	#header-img {
+		width: 500px;
+		height: 50px;
+	}
+	#nav-bar {
+		width: 25%;
+	}
+	li {
+		font-size: 15px;
+	}
+}
+@media (max-width: 400px) {
+	#header-img {
+		width: 300px;
+		height: 50px;
+		flex: 1;
+	}
+	#nav-bar {
+		width: 25%;
+		flex: 2;
+	}
+	li {
+		font-size: 15px;
+	}
+}
